@@ -1,0 +1,14 @@
+
+
+.carousel-custom {
+margin: 100px 0;
+.carousel.slide.shadow {
+box-shadow: 25px 25px 0px #E42B12 !important;
+border-radius: 26px;
+
+@include respond-max(md) {
+      box-shadow: 10px 10px 0px #E42B12 !important;
+      border-radius: 8px;
+    }
+}
+}

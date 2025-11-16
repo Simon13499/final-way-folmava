@@ -1,0 +1,46 @@
+// === utils/variables.scss ===// 1. Proměnné
+@import "bootstrap/scss/functions";
+$primary: #e42b12;
+$secondary:  #fff;
+$dark: #000;
+$primary-color: #E42B12;
+$secondary-color: #fff;
+// Nejdřív musíš načíst Bootstrap funkce a proměnné,
+// aby Sass znal $theme-colors, které pak rozšíříš
+@import "bootstrap/scss/variables";
+
+// --- tvoje vlastní barvy ---
+$zelena: #10e128;
+$dark-brand: #1a1a1a;
+$light-brand: #f8f8f8;
+
+// --- rozšíření Bootstrap mapy ---
+$theme-colors: map-merge(
+  $theme-colors,
+  (
+    "zelena": $zelena,
+    "dark-brand": $dark-brand,
+    "light-brand": $light-brand
+  )
+);
+
+$breakpoints: (
+  "sm": 576px,
+  "md": 768px,
+  "lg": 992px,
+  "xl": 1200px
+);
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+
+
+
